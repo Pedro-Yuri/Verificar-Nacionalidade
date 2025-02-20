@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando paises</title>
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: fantasy;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Qual é o seu país? <input type="text" name="naci" id="naci">
+    <input type="button" value="Analisar" onclick="Origem()">
+    <div id="Resposta"></div>
+    <script>
+        function Origem() {
+            var berço = window.document.getElementById('naci')
+            var resultado = window.document.getElementById('Resposta')
+            var naci = berço.value
+            resultado.innerHTML = "";
+           if(naci == 'Brasil') {
+            resultado.innerHTML = ' você É brasileiro, TMJ brazuca slk akkakaka não compensa'
+           } else if (naci == 'Angola') {
+            resultado.innerHTML = 'você é de Angola, meu!!!'
+           } else if (naci == 'Japão') {
+            resultado.innerHTML = 'você é japoca, pastel de Flango akkakakak' 
+           } else {
+            resultado.innerHTML = 'você é estrangeiro'
+           }
+        }
+           
+    </script>
+    
+</body>
+</html>
